@@ -46,4 +46,4 @@ jobs:
       - name: Compile and smoke-test package
         run: |
           python -m compileall -q memory_research.py tests
-          python -c "from memory_research import WaveMemory; print(type(WaveMemory()).__name__)"
+          python -c "from memory_research import WaveMemory; m = WaveMemory(8); print(type(m).__name__)"
